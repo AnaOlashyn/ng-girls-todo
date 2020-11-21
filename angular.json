@@ -117,8 +117,13 @@
               "devServerTarget": "ng-girls-todo:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ng-girls-todo"
 }
