@@ -1,5 +1,8 @@
 <div class="todo-item">
-  {{ item.title }}
+  <input class="todo-checkbox" (click)="completeItem()" type="checkbox" />
+  <span class="todo-title" [ngClass]="{'todo-complete': item.completed}">
+    {{ item.title }}
+  </span>
 </div>
 
 <button class="btn btn-red" (click)="removeItem()">
