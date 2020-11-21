@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-girls-todo": {
+    "ngGirlsProject": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ng-girls-todo",
+            "outputPath": "dist/ngGirlsProject",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ng-girls-todo:build"
+            "browserTarget": "ngGirlsProject:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ng-girls-todo:build:production"
+              "browserTarget": "ngGirlsProject:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-girls-todo:build"
+            "browserTarget": "ngGirlsProject:build"
           }
         },
         "test": {
@@ -110,11 +110,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ng-girls-todo:serve"
+            "devServerTarget": "ngGirlsProject:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ng-girls-todo:serve:production"
+              "devServerTarget": "ngGirlsProject:serve:production"
             }
           }
         },
@@ -125,5 +125,5 @@
       }
     }
   },
-  "defaultProject": "ng-girls-todo"
+  "defaultProject": "ngGirlsProject"
 }
